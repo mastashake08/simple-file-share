@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { Head, Link } from '@inertiajs/vue3';
+import FileUpload from '@/components/FileUpload.vue';
 </script>
 
 <template>
@@ -75,17 +76,7 @@ import { Head, Link } from '@inertiajs/vue3';
                             </span>
                         </li>
                     </ul>
-                    <ul class="flex gap-3 text-sm leading-normal">
-                        <li>
-                            <a
-                                href="https://github.com/mastashake08/simple-file-share"
-                                target="_blank"
-                                class="inline-block rounded-sm border border-black bg-[#1b1b18] px-5 py-1.5 text-sm leading-normal text-white hover:border-black hover:bg-black dark:border-[#eeeeec] dark:bg-[#eeeeec] dark:text-[#1C1C1A] dark:hover:border-white dark:hover:bg-white"
-                            >
-                                Deploy your own instance
-                            </a>
-                        </li>
-                    </ul>
+                    <FileUpload></FileUpload>   
                 </div>
                 
             </main>
