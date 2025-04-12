@@ -41,7 +41,11 @@ import FileUpload from '@/components/FileUpload.vue';
                 >
                     <h1 class="mb-1 font-medium">Welcome to Simple File Share</h1>
                     <p class="mb-2 text-[#706f6c] dark:text-[#A1A09A]">
-                        A fast and easy way to share files with anyone. <br />Get started by uploading your files and sharing the generated link.
+                        A fast and easy way to share files with anyone. <br />
+                        Get started by uploading your files and sharing the generated link.
+                    </p>
+                    <p class="mb-2 text-[#706f6c] dark:text-[#A1A09A]">
+                        Please note: Uploaded files are stored on the server for one week. After that, they are automatically deleted to ensure security and privacy.
                     </p>
                     <ul class="mb-4 flex flex-col lg:mb-6">
                         <li
@@ -75,10 +79,38 @@ import FileUpload from '@/components/FileUpload.vue';
                                 </a>
                             </span>
                         </li>
+                        <li
+                            class="relative flex items-center gap-4 py-2 before:absolute before:bottom-0 before:left-[0.4rem] before:top-1/2 before:border-l before:border-[#e3e3e0] dark:before:border-[#3E3E3A]"
+                        >
+                            <span class="relative bg-white py-1 dark:bg-[#161615]">
+                                <span
+                                    class="flex h-3.5 w-3.5 items-center justify-center rounded-full border border-[#e3e3e0] bg-[#FDFDFC] shadow-[0px_0px_1px_0px_rgba(0,0,0,0.03),0px_1px_2px_0px_rgba(0,0,0,0.06)] dark:border-[#3E3E3A] dark:bg-[#161615]"
+                                >
+                                    <span class="h-1.5 w-1.5 rounded-full bg-[#dbdbd7] dark:bg-[#3E3E3A]" />
+                                </span>
+                            </span>
+                            <span>
+                                Learn more about the creators:
+                                <a
+                                    href="https://jcompsolu.com"
+                                    target="_blank"
+                                    class="ml-1 inline-flex items-center space-x-1 font-medium text-[#f53003] underline underline-offset-4 dark:text-[#FF4433]"
+                                >
+                                    <span>J Computer Solutions LLC</span>
+                                </a>
+                                and
+                                <a
+                                    href="https://jyroneparker.com"
+                                    target="_blank"
+                                    class="ml-1 inline-flex items-center space-x-1 font-medium text-[#f53003] underline underline-offset-4 dark:text-[#FF4433]"
+                                >
+                                    <span>Jyrone Parker</span>
+                                </a>.
+                            </span>
+                        </li>
                     </ul>
                     <FileUpload></FileUpload>   
                 </div>
-                
             </main>
         </div>
         <div class="h-14.5 hidden lg:block"></div>
