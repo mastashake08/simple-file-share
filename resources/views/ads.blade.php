@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Redirect</title>
+    <title>J Computer Solutions File Share</title>
+    
+    <!-- Social Media Share Meta Tags -->
+    <meta property="og:title" content="Simple File Share by J Computer Solutions" />
+    <meta property="og:description" content="Easily share files with Simple File Share, a fast and secure file-sharing platform." />
+    <meta property="og:image" content="https://jcompsolu.com/logo.png" />
+    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Simple File Share by J Computer Solutions" />
+    <meta name="twitter:description" content="Easily share files with Simple File Share, a fast and secure file-sharing platform." />
+    <meta name="twitter:image" content="https://jcompsolu.com/logo.png" />
+
     <!-- Google AdSense Script -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
@@ -11,6 +22,46 @@
             google_ad_client: "ca-pub-7023023584987784", // Replace with your AdSense publisher ID
             enable_page_level_ads: true
         });
+    </script>
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "J Computer Solutions LLC",
+        "url": "https://jcompsolu.com",
+        "logo": "https://jcompsolu.com/logo.png",
+        "sameAs": [
+            "https://www.facebook.com/jcompsolu",
+            "https://www.instagram.com/jcompsolu",
+            "https://jcompsolu.com"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-859-402-4863",
+            "contactType": "Customer Service"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Jyrone Parker",
+        "alternateName": "mastashake08",
+        "url": "https://jyroneparker.com",
+        "sameAs": [
+            "https://github.com/mastashake08",
+            "https://x.com/mastashake08",
+            "https://www.linkedin.com/in/jyroneparker",
+            "https://instagram.com/mastashake08",
+            "https://youtube.com/c/jyroneparker"
+        ],
+        "worksFor": {
+            "@type": "Organization",
+            "name": "J Computer Solutions LLC"
+        }
+    }
     </script>
 </head>
 <body>
@@ -69,7 +120,7 @@
     </div>
 
     <script>
-        // Automatically redirect after a delay (e.g., 5 seconds)
+        // Automatically redirect after a delay (e.g., 10 seconds)
         setTimeout(() => {
             window.location.href = "{{ $shortLink->url }}";
         }, 10000);
