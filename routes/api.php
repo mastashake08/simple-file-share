@@ -3,7 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Storage;
-
+use App\Models\ShortLink;
+use Illuminate\Support\Str;
 Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
@@ -18,5 +19,10 @@ Route::post('/save-file', function (Request $request) {
 
     // make a temporary URL and return
     $url = Storage::temporaryUrl($path, now()->addWeek(1));
-    return response()->json(['url' => $url], 201);
+    $shortLink = ShortLink::create([
+        'short_link' => Str::random(6),
+        'url' => $url,
+        'path' => $path,
+    ]);
+    return response()->json(['url' => $shortLink->getLink()], 201);
 });
