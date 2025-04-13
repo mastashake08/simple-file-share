@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use Illuminate\Http\Request;
 
 Route::get('/', function () {
     return Inertia::render('Welcome');
@@ -16,5 +17,14 @@ Route::get('file/{short_link}', function ($short_link) {
     return view('ads', ['shortLink' => $link]);
 })->name('file');
 
+Route::get('/billing', function (Request $request) {
+    return $request->user()->redirectToBillingPortal(route('premium'));
+})->middleware(['auth'])->name('billing');
+
+Route::post('/user/subscribe', function (Request $request) {
+    $request->user()->newSubscription(
+        'default', env('STRIPE_PRICE_ID')
+    );
+});
 require __DIR__.'/settings.php';
 require __DIR__.'/auth.php';
