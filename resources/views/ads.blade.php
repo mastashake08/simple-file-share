@@ -69,6 +69,35 @@
         <h1>Redirecting to your file...</h1>
         <p>We appreciate your patience while we show you some ads for 10 seconds.</p>
 
+        <div style="margin: 20px 0; text-align: left;">
+            <h2>About Simple File Share</h2>
+            <p>
+                Simple File Share is a fast and secure platform designed to make file sharing easy for everyone. 
+                Whether you need to send large files to a colleague, share documents with a client, or distribute 
+                media files to friends, Simple File Share provides a seamless experience.
+            </p>
+            <h3>How It Works</h3>
+            <ul>
+                <li>Upload your file using our simple drag-and-drop interface.</li>
+                <li>Receive a unique link to share with others.</li>
+                <li>Recipients can download the file directly from the link.</li>
+            </ul>
+            <p>
+                Files are stored securely on our servers for up to one week, after which they are automatically deleted 
+                to ensure your privacy and security.
+            </p>
+            <h3>Why Choose Simple File Share?</h3>
+            <ul>
+                <li>Fast and reliable file uploads and downloads.</li>
+                <li>Secure storage with automatic file deletion after one week.</li>
+                <li>Completely free to use with no hidden fees.</li>
+            </ul>
+            <p>
+                Simple File Share is proudly developed by <a href="https://jcompsolu.com" target="_blank">J Computer Solutions LLC</a>, 
+                a trusted name in software development, and programmed by <a href="https://jyroneparker.com" target="_blank">Jyrone Parker</a>.
+            </p>
+        </div>
+
         <!-- Google Ad Section 1 -->
         <div style="margin: 20px 0;">
             <ins class="adsbygoogle"
